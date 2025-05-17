@@ -3,6 +3,7 @@
 .vscode/
 .next/
 .vercel/
+.make/
 
 # Node.js
 node_modules/
