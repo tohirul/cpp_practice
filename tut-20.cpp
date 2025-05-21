@@ -15,7 +15,7 @@ class BankAccount {
         }
     
     // get account information
-    virtual double getBalance() const {
+    double getBalance() const {
         return balance;
     }
 
