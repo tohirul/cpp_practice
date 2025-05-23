@@ -1,0 +1,55 @@
+# .clang-format
+
+# Use the LLVM style as a base (or Google, Mozilla, WebKit, etc.)
+BasedOnStyle: LLVM
+
+# Language standard
+Language: Cpp
+
+# Formatting options
+IndentWidth: 4 # 4 spaces per indentation level
+TabWidth: 4 # Width of tab character
+UseTab: Never # Always use spaces, never tabs
+
+# Brace wrapping
+BreakBeforeBraces: Allman # Each brace on its own line (Allman style)
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: InlineOnly
+
+# Line length
+ColumnLimit: 100 # Maximum line length before wrapping
+
+# Spaces and padding
+SpaceBeforeParens: ControlStatements # Space before parentheses in if, for, while
+SpaceInEmptyParentheses: false
+SpacesInAngles: false
+SpacesInCStyleCastParentheses: false
+SpaceAfterCStyleCast: true
+SpacesInContainerLiterals: false
+SpacesBeforeTrailingComments: 1
+
+# Pointer/reference alignment
+PointerAlignment: Left # int* ptr; not int *ptr;
+DerivePointerAlignment: false
+
+# Sorting and alignment
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AlignTrailingComments: true
+SortIncludes: true
+IncludeBlocks: Preserve
+
+# Keep comments as they are
+ReflowComments: false
+
+# Namespace indentation
+# IndentNamespace: None
+
+# Customization for C compatibility
+Cpp11BracedListStyle: false
+
+# Others
+AlwaysBreakTemplateDeclarations: Yes
+KeepEmptyLinesAtTheStartOfBlocks: false
+EmptyLineBeforeAccessModifier: Always
